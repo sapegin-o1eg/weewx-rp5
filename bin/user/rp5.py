@@ -3,6 +3,7 @@ import Queue
 import syslog
 import weewx.restx
 import urllib2
+import weewx.units
 
 
 # ============================================================================
@@ -81,9 +82,10 @@ class RP5Thread(weewx.restx.RESTThread):
     def format_url(self, incoming_record):
         """Return an URL for posting """
 
+        record = weewx.units.to_METRIC(incoming_record)
         _liststr = ["api_key=%s" % self.api_key]
         for _key in self._FORMATS:
-            _v = incoming_record.get(_key)
+            _v = record.get(_key)
             if _v is not None:
                 _liststr.append(self._FORMATS[_key] % _v)
         _urlquery = '&'.join(_liststr)
