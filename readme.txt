@@ -19,7 +19,7 @@ weewx-rp5 - выгрузка данных на сайт rp5.ru. Далее Мо�
 
 Автоматическая установка с помощью wee_extension:
   1. Загрузите последнюю версию Модуля https://github.com/sapegin-o1eg/weewx-rp5/releases
-      wget -P /tmp https://github.com/sapegin-o1eg/weewx-rp5/releases/download/v0.1/weewx-rp5-0.1.tar.gz
+      wget -P /tmp https://github.com/sapegin-o1eg/weewx-rp5/releases/download/v0.2/weewx-rp5-0.2.tar.gz
 
   2. Остановите WeeWX
       sudo /etc/init.d/weewx stop
@@ -28,7 +28,7 @@ weewx-rp5 - выгрузка данных на сайт rp5.ru. Далее Мо�
 
   3. Установите модуль используя утилиту wee_extension
       cd /home/weewx/bin
-      ./wee_extension --install=/tmp/weewx-rp5-0.1.tar.gz
+      ./wee_extension --install=/tmp/weewx-rp5-0.2.tar.gz
 
   4. Отредактируйте конфигурационный файл weewx.conf
       vim /home/weewx/weewx.conf
@@ -53,7 +53,7 @@ weewx-rp5 - выгрузка данных на сайт rp5.ru. Далее Мо�
 
 Ручная установка:
   1. Загрузите последнюю версию Модуля https://github.com/sapegin-o1eg/weewx-rp5/releases
-      wget -P /tmp https://github.com/sapegin-o1eg/weewx-rp5/releases/download/v0.1/weewx-rp5-0.1.tar.gz
+      wget -P /tmp https://github.com/sapegin-o1eg/weewx-rp5/releases/download/v0.2/weewx-rp5-0.2.tar.gz
 
   2. Остановите WeeWX
       sudo /etc/init.d/weewx stop
@@ -61,7 +61,7 @@ weewx-rp5 - выгрузка данных на сайт rp5.ru. Далее Мо�
       sudo service weewx stop
 
   3. Распакуйте установочный файл
-      tar xvfz weewx-rp5-0.1.tar.gz
+      tar xvfz weewx-rp5-0.2.tar.gz
 
   4. Скопируйте распакованные файлы
       cp weewx-rp/bin/user/*.py /home/weewx/bin/user
