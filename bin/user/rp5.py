@@ -82,7 +82,7 @@ class RP5Thread(weewx.restx.RESTThread):
     def format_url(self, incoming_record):
         """Return an URL for posting """
 
-        record = weewx.units.to_METRIC(incoming_record)
+        record = weewx.units.to_METRICWX(incoming_record)
         _liststr = ["api_key=%s" % self.api_key]
         for _key in self._FORMATS:
             _v = record.get(_key)

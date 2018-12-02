@@ -3,3 +3,6 @@ v0.1 06nov2018
 
 v0.2 29nov2018
 * Temperature bug fixed
+
+v0.3 02dec2018
+* Now wind and wind gust data in m/s
