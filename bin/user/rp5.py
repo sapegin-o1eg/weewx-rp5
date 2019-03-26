@@ -50,7 +50,7 @@ class RP5Thread(weewx.restx.RESTThread):
     """Class for posting data via RP5 API"""
 
     def __init__(self, queue, manager_dict, api_key, server_url,
-                 protocol_name="Unknown-RESTful", post_interval=None,
+                 protocol_name="Unknown-RESTful", post_interval=2,
                  max_backlog=sys.maxint, stale=None, log_success=True,
                  log_failure=True, timeout=5, max_tries=3, retry_wait=2,
                  skip_upload=False):

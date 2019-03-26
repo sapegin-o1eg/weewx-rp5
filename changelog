@@ -6,3 +6,6 @@ v0.2 29nov2018
 
 v0.3 02dec2018
 * Now wind and wind gust data in m/s
+
+v0.4 26mar2019
+* Uploads rate limit added. RP5-API requires no more than 60 r/m
